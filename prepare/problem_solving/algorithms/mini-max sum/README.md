@@ -105,6 +105,8 @@ The test cases are the following, in which you can find: _input_ and _expected o
 1575456874 2357937445
 ```
 
+---
+
 ### Test case 12
 
 #### Input
