@@ -7,6 +7,8 @@ Link -> [https://www.hackerrank.com/challenges/mini-max-sum/problem](https://www
 
 Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
+----
+
 ### Example
 
 $array = [1, 3, 5, 7, 9]$
@@ -92,6 +94,8 @@ The numbers are $1$, $2$, $3$, $4$, and $5$. Calculate the following sums using 
 ## Tests
 
 The test cases are the following, in which you can find: _input_ and _expected output_.
+
+----
 
 ### Test case 0
 
