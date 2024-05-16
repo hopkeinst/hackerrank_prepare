@@ -69,12 +69,27 @@ The numbers are $1$, $2$, $3$, $4$, and $5$. Calculate the following sums using 
 
 **Hint:** Beware of integer overflow! Use 64-bit Integer.
 
-[Go to the top of the page][#title]
+[Go to the top of the page](#title)
 
 ----
 
 ## Tests
 
+The test cases are the following, in which you can find: _input_ and _expected output_.
+
+### Test case 0
+
+#### Input
+
+```cpp
+1 2 3 4 5
+```
+
+#### Expected Output
+
+```cpp
+10 14
+```
 
 
-[Go to the top of the page][#title]
+[Go to the top of the page](#title)
