@@ -91,5 +91,46 @@ The test cases are the following, in which you can find: _input_ and _expected o
 10 14
 ```
 
+### Test case 11
+
+#### Input
+
+```cpp
+140537896 243908675 670291834 923018467 520718469
+```
+
+#### Expected Output
+
+```cpp
+1575456874 2357937445
+```
+
+### Test case 12
+
+#### Input
+
+```cpp
+793810624 895642170 685903712 623789054 468592370
+```
+
+#### Expected Output
+
+```cpp
+2572095760 2999145560
+```
+
+### Test case 14
+
+#### Input
+
+```cpp
+7 69 2 221 8974
+```
+
+#### Expected Output
+
+```cpp
+299 9271
+```
 
 [Go to the top of the page](#title)
