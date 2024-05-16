@@ -10,7 +10,11 @@ Given five positive integers, find the minimum and maximum values that can be ca
 
 $array = [1, 2, 3, 4, 5]$
 
-The minimum sum is and the maximum sum is . The function prints
+The minimum sum is $1 + 2 + 3 + 4 = 16$ and the maximum sum is $2 + 3 + 4 + 5 = 24$. The function prints:
+
+```cpp
+16 24
+```
 
 ----
 
