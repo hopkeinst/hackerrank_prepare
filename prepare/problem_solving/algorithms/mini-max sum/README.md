@@ -17,6 +17,8 @@ The minimum sum is $1 + 3 + 5 + 7 = 16$ and the maximum sum is $3 + 5 + 7 + 9 = 
 16 24
 ```
 
+----
+
 ### Function Description
 
 Complete the miniMaxSum function in the editor below.
@@ -25,21 +27,31 @@ miniMaxSum has the following parameter(s):
 
 - arr: an array of $5$ integers
 
+----
+
 ### Print
 
 Print two space-separated integers on one line: the minimum sum and the maximum sum of $4$ of $5$ elements.
+
+----
 
 ### Input Format
 
 A single line of five space-separated integers.
 
+----
+
 ### Constraints
 
 $1 \leq arr[i] \leq 10^{9}$
 
+----
+
 ### Output Format
 
 Print two space-separated long integers denoting the respective minimum and maximum values that can be calculated by summing exactly four of the five integers. (The output can be greater than a 32 bit integer.)
+
+----
 
 ### Sample Input
 
@@ -47,11 +59,15 @@ Print two space-separated long integers denoting the respective minimum and maxi
 1 2 3 4 5
 ```
 
+----
+
 ### Sample Output
 
 ```cpp
 10 14
 ```
+
+----
 
 ### Explanation
 
@@ -91,6 +107,8 @@ The test cases are the following, in which you can find: _input_ and _expected o
 10 14
 ```
 
+----
+
 ### Test case 11
 
 #### Input
@@ -105,7 +123,7 @@ The test cases are the following, in which you can find: _input_ and _expected o
 1575456874 2357937445
 ```
 
----
+----
 
 ### Test case 12
 
@@ -120,6 +138,8 @@ The test cases are the following, in which you can find: _input_ and _expected o
 ```cpp
 2572095760 2999145560
 ```
+
+----
 
 ### Test case 14
 
