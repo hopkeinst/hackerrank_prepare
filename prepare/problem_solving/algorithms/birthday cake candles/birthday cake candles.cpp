@@ -7,48 +7,55 @@ string rtrim(const string &);
 vector<string> split(const string &);
 
 /*
- * Complete the 'miniMaxSum' function below.
+ * Complete the 'birthdayCakeCandles' function below.
  *
- * The function accepts INTEGER_ARRAY arr as parameter.
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY candles as parameter.
  */
 
-void miniMaxSum(vector<int> arr) {
-    unsigned long min = INT64_MAX;
-    unsigned long max = 1;
-    for(int i=0; i<arr.size(); i++) {
-        unsigned long sum = 0;
-        for(int j=0; j<arr.size(); j++) {
-            if(i!=j) {
-                sum+=arr[j];
-            }
-        }
-        if(sum>max) {
-            max=sum;
-        }
-        if(sum<min) {
-            min=sum;
+int birthdayCakeCandles(vector<int> candles) {
+    int max = INT_MIN;
+    for(int i=0; i<candles.size(); i++) {
+        if(candles[i] > max) {
+            max = candles[i];
         }
     }
-    cout << min << " " << max << endl;
+    int cnt_max = 0;
+    for(int i=0; i<candles.size(); i++) {
+        if(candles[i] == max) {
+            cnt_max += 1;
+        }
+    }
+    return cnt_max;
 }
 
 int main()
 {
+    ofstream fout(getenv("OUTPUT_PATH"));
 
-    string arr_temp_temp;
-    getline(cin, arr_temp_temp);
+    string candles_count_temp;
+    getline(cin, candles_count_temp);
 
-    vector<string> arr_temp = split(rtrim(arr_temp_temp));
+    int candles_count = stoi(ltrim(rtrim(candles_count_temp)));
 
-    vector<int> arr(5);
+    string candles_temp_temp;
+    getline(cin, candles_temp_temp);
 
-    for (int i = 0; i < 5; i++) {
-        int arr_item = stoi(arr_temp[i]);
+    vector<string> candles_temp = split(rtrim(candles_temp_temp));
 
-        arr[i] = arr_item;
+    vector<int> candles(candles_count);
+
+    for (int i = 0; i < candles_count; i++) {
+        int candles_item = stoi(candles_temp[i]);
+
+        candles[i] = candles_item;
     }
 
-    miniMaxSum(arr);
+    int result = birthdayCakeCandles(candles);
+
+    fout << result << "\n";
+
+    fout.close();
 
     return 0;
 }

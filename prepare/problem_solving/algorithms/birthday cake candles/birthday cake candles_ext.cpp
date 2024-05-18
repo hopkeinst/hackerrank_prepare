@@ -1,74 +1,52 @@
-#include <cmath>
-#include <cstdio>
 #include <vector>
 #include <iostream>
-#include <algorithm>
-#include <bits/stdc++.h>
+#include <sstream>
 
 using namespace std;
 
-string ltrim(const string &);
-string rtrim(const string &);
-vector<string> split(const string &);
-
 /*
- * Complete the 'miniMaxSum' function below.
+ * Complete the 'birthdayCakeCandles' function below.
  *
- * The function accepts INTEGER_ARRAY arr as parameter.
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY candles as parameter.
  */
 
-void miniMaxSum(vector<int> arr) {
-    unsigned long min = INT64_MAX;
-    unsigned long max = 1;
-    cout << endl << "Min: " << min << endl << "Max: " << max << endl;
-    for(int i=0; i<arr.size(); i++) {
-        unsigned long sum = 0;
-        cout << "Excluye " << i << " -> " << arr[i] << endl;
-        for(int j=0; j<arr.size(); j++) {
-            if(i!=j) {
-                sum+=arr[j];
-                cout << "  " << arr[j];
-            }
-        }
-        cout << endl << "  Suma: " << sum << endl;
-        if(sum>max) {
-            cout << "    Suma mayor al máximo" << endl;
-            cout << "    " << sum << " > " << max << endl;
-            max=sum;
-            cout << "    New max: " << max << endl;
-        }
-        if(sum<min) {
-            cout << "    Suma menor al máximo" << endl;
-            cout << "    " << sum << " < " << min << endl;
-            min=sum;
-            cout << "    New min: " << min << endl;
+int birthdayCakeCandles(vector<int> candles) {
+    int max = INT16_MIN;
+    for(int i=0; i<candles.size(); i++) {
+        if(candles[i] > max) {
+            max = candles[i];
         }
     }
-    cout << min << " " << max << endl;
+    int cnt_max = 0;
+    for(int i=0; i<candles.size(); i++) {
+        if(candles[i] == max) {
+            cnt_max += 1;
+        }
+    }
+    return cnt_max;
 }
 
-int main()
-{
-
+int main() {
+    
+    int n;
+    cin >> n;
+    cin.ignore();
+    
     string arr_temp_temp;
     getline(cin, arr_temp_temp);
-
+    
     istringstream iss(arr_temp_temp);
 
-    vector<int> arr(5);
+    vector<int> candles(n);
     
-    for (int i = 0; i < 5; ++i) {
-        iss >> arr[i];
+    for (int i = 0; i < n; ++i) {
+        iss >> candles[i];
     }
 
-    // Imprimir los números para verificar
-    cout << "Los números leídos son: ";
-    for (int num : arr) {
-        cout << num << " ";
-    }
-    cout << endl;
+    int result = birthdayCakeCandles(candles);
 
-    miniMaxSum(arr);
+    cout << result << "\n";
 
     return 0;
 }
