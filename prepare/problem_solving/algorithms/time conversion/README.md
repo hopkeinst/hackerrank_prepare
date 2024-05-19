@@ -14,7 +14,7 @@ Given a time in [12-hour AM/PM format](https://en.wikipedia.org/wiki/12-hour_clo
 
 ### Example
 
-- $s = '12:01:00PM$
+- $s = '12:01:00PM'$
 
 Return $'12:01:00'$
 
@@ -68,7 +68,7 @@ A single string $s$ that represents a time in $12-hour$ clock format (i.e.: $hh:
 
 ----
 
-## Tests
+## Test cases
 
 The test cases are the following, in which you can find: _input_ and _expected output_.
 
@@ -79,31 +79,29 @@ The test cases are the following, in which you can find: _input_ and _expected o
 #### Input
 
 ```bash
-4
-3 2 1 3
+07:05:45PM
 ```
 
 #### Expected Output
 
 ```bash
-2
+19:05:45
 ```
 
 ----
 
-### Test case 6
+### Test case 8
 
 #### Input
 
 ```bash
-100000 
-9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 9999999 ...
+12:00:00AM
 ```
 
 #### Expected Output
 
 ```bash
-100000
+00:00:00
 ```
 
 [Go to the top of the page](#title)
