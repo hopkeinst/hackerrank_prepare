@@ -94,7 +94,7 @@ Each line $i$ of $n$ the subsequent lines contains a single integer, $grades[i]$
 | 2 | 67 | 67 | 
 | 3 | 38 | 40 |
 | 4 | 33 | 33 |
-0
+
 - Student $1$ received a $73$, and the next multiple of $5$ from $73$ is $75$. Since $75 - 73 < 3$, the student's grade is rounded to $75$.
 
 - Student $2$ received a $67$, and the next multiple of $5$ from $67$ is $70$. Since $70 - 67 = 3$, the grade will not be modified and the student's final grade is $67$.
